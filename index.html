@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flowers - Internet Flower Shop</title>
+    <link rel="stylesheet" href="./css/bootstrap-grid.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 mb-3 mb-md-0">
+            <a href="#">
+              <img src="./img/logo.png" alt="logo: Flowers" class="header-logo"
+            /></a>
+          </div>
+          <div class="col-lg-6 col-md-4 mb-3 mb-md-0">
+            <span class="header-description"
+              >Internet flower shop <br />
+              with <span class="text-color-red">worldwide </span>delivery</span
+            >
+          </div>
+          <div class="col-lg-3 col-md-5 header-contacts">
+            <a href="tel:+123456789000" class="header-phone"
+              >+12 34-567-89-000</a
+            >
+            <span class="header-info">Free worldwide calls</span>
+            <a
+              data-fancybox
+              data-src="#modal"
+              href="javascript:;"
+              class="callback"
+              >Request a call back</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero-title">Rare and exotic flowers and flower bouquets</h1>
+        <p class="hero-description">
+          <b>Fast</b> delivery for <b>smart</b> people
+        </p>
+        <!-- Slider with flowers -->
+        <div class="swiper-container flower-slider">
+          <!-- Wrapper slides-->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img
+                src="./img/flowers/flower-1.png"
+                alt="flower: rose"
+                class="slide-image"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./img/flowers/flower-2.png"
+                alt="flower: lily"
+                class="slide-image"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./img/flowers/flower-3.png"
+                alt="flower: white aster"
+                class="slide-image"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./img/flowers/flower-4.png"
+                alt="flower: lilac"
+                class="slide-image"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./img/flowers/flower-5.png"
+                alt="flower: yellow gerbera"
+                class="slide-image"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./img/flowers/flower-6.png"
+                alt="flower: alstroemeria"
+                class="slide-image"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./img/flowers/flower-3.png"
+                alt="flower: white aster"
+                class="slide-image"
+              />
+            </div>
+          </div>
+
+          <!-- Navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <!-- ./swiper-container-->
+        <span class="hero-cta">Order an exclusive bouquet with 25% discount.</span>
+        <a data-fancybox data-src="#modal" href="javascript:;" class="button"
+          >Order a bouquet</a
+        >
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="container">
+        <h2 class="section-title">We make the best bouquets</h2>
+        <!-- Slider with reviews-->
+        <div class="swiper-container reviews-slider">
+          <!-- Wrapper slides -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div
+              class="swiper-slide review-slide d-flex flex-column flex-md-row align-items-center"
+            >
+              <div
+                class="review-image d-flex align-items-center justify-content-center flex-column review-image-1"
+              >
+                <span class="review-name">John Smith</span>
+                <span class="review-city">Australia</span>
+              </div>
+              <div class="review-text">
+                <p class="review">
+                  I've ordered from Sunny Florist several times, and I am never disappointed, never! The flowers are always fresh and delivered on time! This is my go to florist. Just beautiful!
+                </p>
+                <a href="javascript:;" id="review-1" class="review-link"
+                  >See bouquet photos</a
+                >
+              </div>
+            </div>
+            <!-- ./swiper-slide -->
+            <div
+              class="swiper-slide review-slide d-flex flex-column flex-md-row align-items-center"
+            >
+              <div
+                class="review-image d-flex align-items-center justify-content-center flex-column review-image-2"
+              >
+                <span class="review-name">Ann Miller</span>
+                <span class="review-city">Germany</span>
+              </div>
+              <div class="review-text">
+                <p class="review">
+                  I needed to order flowers last minute for work. I love that you were able to do a same day delivery. The notifications when the flowers were en route and delivered made it a stress-free process.
+                </p>
+                <a href="javascript:;" id="review-2" class="review-link"
+                  >See bouquet photos</a
+                >
+              </div>
+            </div>
+            <!-- ./swiper-slide -->
+          </div>
+
+          <!-- Navigation buttons -->
+          <div class="swiper-button-prev button-prev"></div>
+          <div class="swiper-button-next button-next"></div>
+        </div>
+        <!--./swiper-container-->
+      </div>
+    </section>
+    <section class="advantages">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-5 mb-md-0">
+            <div class="advantages-wrapper">
+              <img
+                src="./img/advantages/advantages-1.png"
+                alt="Only direct delivery from Spain"
+                class="advantages-image"
+              />
+            </div>
+            <h3 class="advantages-title">
+              Only direct delivery from&nbsp;Spain
+            </h3>
+          </div>
+          <div class="col-md-4 mb-5 mb-md-0">
+            <div class="advantages-wrapper">
+              <img
+                src="./img/advantages/advantages-2.png"
+                alt="Our staff has 10 years experience"
+                class="advantages-image"
+              />
+            </div>
+
+            <h3 class="advantages-title">
+              Our staff has 10 years experience
+            </h3>
+          </div>
+          <div class="col-md-4 mb-5 mb-md-0">
+            <div class="advantages-wrapper">
+              <img
+                src="./img/advantages/advantages-3.png"
+                alt="All flowers are selected manually"
+                class="advantages-image"
+              />
+            </div>
+
+            <h3 class="advantages-title">
+              All flowers are selected manually
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="goods">
+      <div class="container">
+        <h2 class="section-title">
+          Make your own bouquet <span class="text-red">right now!</span>
+        </h2>
+        <p class="section-description">
+          Choose the desired flowers andwe deliver the purchase as fast as possible!
+        </p>
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img
+                src="./img/flowers/flower-1.png"
+                alt="rose"
+                class="card-image"
+              />
+              <h3 class="card-title">Rose</h3>
+              <span class="card-label">Select color: </span>
+              <div
+                class="colors d-flex align-items-center justify-content-between"
+              >
+                <label class="color-label white" for="white"></label>
+                <input
+                  class="color-input"
+                  type="radio"
+                  id="white"
+                  name="color"
+                  value="white"
+                />
+                <label class="color-label biege" for="biege"></label>
+                <input
+                  class="color-input"
+                  type="radio"
+                  id="biege"
+                  name="color"
+                  value="biege"
+                />
+                <label class="color-label pink" for="pink"></label>
+                <input
+                  class="color-input"
+                  type="radio"
+                  id="pink"
+                  name="color"
+                  value="pink"
+                />
+                <label class="color-label red" for="red"></label>
+                <input
+                  class="color-input"
+                  type="radio"
+                  id="red"
+                  name="color"
+                  value="red"
+                />
+                <label class="color-label blue" for="blue"></label>
+                <input
+                  class="color-input"
+                  type="radio"
+                  id="blue"
+                  name="color"
+                  value="blue"
+                />
+              </div>
+              <!-- /.colors -->
+              <span class="card-label">Quantity: </span>
+              <div
+                class="counter-group d-flex align-items-center justify-content-center"
+              >
+                <button class="counter-button">-</button>
+                <input type="text" class="counter-input" value="1" />
+                <button class="counter-button">+</button>
+              </div>
+              <!-- ./counter-group -->
+              <button class="button card-button">Add to cart</button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img
+                src="./img/flowers/flower-2.png"
+                alt="lily"
+                class="card-image"
+              />
+              <h3 class="card-title">Lily</h3>
+              <span class="card-label">Select color: </span>
+              <div
+                class="colors d-flex align-items-center justify-content-between"
+              >
+                <label class="color-label white" for="white"></label>
+                <input
+                  class="color-input"
+                  type="radio"
+                  id="white"
+                  name="color"
+                  value="white"
+                />
+                <label class="color-label biege" for="biege"></label>
+                <input
+                  class="color-input"
+                  type="radio"
+                  id="biege"
+                  name="color"
+                  value="biege"
+                />
+                <label class="color-label pink" for="pink"></label>
+                <input
+                  class="color-input"
+                  type="radio"
+                  id="pink"
+                  name="color"
+                  value="pink"
+                />
+                <label class="color-label red" for="red"></label>
+                <input
+                  class="color-input"
+                  type="radio"
+                  id="red"
+                  name="color"
+                  value="red"
+                />
+                <label class="color-label blue" for="blue"></label>
+                <input
+                  class="color-input"
+                  type="radio"
+                  id="blue"
+                  name="color"
+                  value="blue"
+                />
+              </div>
+              <!-- /.colors -->
+              <span class="card-label">Quantity: </span>
+              <div
+                class="counter-group d-flex align-items-center justify-content-center"
+              >
+                <button class="counter-button">-</button>
+                <input type="text" class="counter-input" value="1" />
+                <button class="counter-button">+</button>
+              </div>
+              <!-- ./counter-group -->
+              <button class="button card-button">Add to cart</button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img
+                src="./img/flowers/flower-3.png"
+                alt="aster"
+                class="card-image"
+              />
+              <h3 class="card-title">Aster</h3>
+              <span class="card-label">Select color: </span>
+              <div
+                class="colors d-flex align-items-center justify-content-between"
+              >
+                <label class="color-label white" for="white"></label>
+                <input
+                  class="color-input"
+                  type="radio"
+                  id="white"
+                  name="color"
+                  value="white"
+                />
+                <label class="color-label biege" for="biege"></label>
+                <input
+                  class="color-input"
+                  type="radio"
+                  id="biege"
+                  name="color"
+                  value="biege"
+                />
+                <label class="color-label pink" for="pink"></label>
+                <input
+                  class="color-input"
+                  type="radio"
+                  id="pink"
+                  name="color"
+                  value="pink"
+                />
+                <label class="color-label red" for="red"></label>
+                <input
+                  class="color-input"
+                  type="radio"
+                  id="red"
+                  name="color"
+                  value="red"
+                />
+                <label class="color-label blue" for="blue"></label>
+                <input
+                  class="color-input"
+                  type="radio"
+                  id="blue"
+                  name="color"
+                  value="blue"
+                />
+              </div>
+              <!-- /.colors -->
+              <span class="card-label">Quantity: </span>
+              <div
+                class="counter-group d-flex align-items-center justify-content-center"
+              >
+                <button class="counter-button">-</button>
+                <input type="text" class="counter-input" value="1" />
+                <button class="counter-button">+</button>
+              </div>
+              <!-- ./counter-group -->
+              <button class="button card-button">Add to cart</button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img
+                src="./img/flowers/flower-4.png"
+                alt="lilac"
+                class="card-image"
+              />
+              <h3 class="card-title">Lilac</h3>
+              <span class="card-label">Select color: </span>
+              <div
+                class="colors d-flex align-items-center justify-content-between"
+              >
+                <label class="color-label white" for="white"></label>
+                <input
+                  class="color-input"
+                  type="radio"
+                  id="white"
+                  name="color"
+                  value="white"
+                />
+                <label class="color-label biege" for="biege"></label>
+                <input
+                  class="color-input"
+                  type="radio"
+                  id="biege"
+                  name="color"
+                  value="biege"
+                />
+                <label class="color-label pink" for="pink"></label>
+                <input
+                  class="color-input"
+                  type="radio"
+                  id="pink"
+                  name="color"
+                  value="pink"
+                />
+                <label class="color-label red" for="red"></label>
+                <input
+                  class="color-input"
+                  type="radio"
+                  id="red"
+                  name="color"
+                  value="red"
+                />
+                <label class="color-label blue" for="blue"></label>
+                <input
+                  class="color-input"
+                  type="radio"
+                  id="blue"
+                  name="color"
+                  value="blue"
+                />
+              </div>
+              <!-- /.colors -->
+              <span class="card-label">Quantity: </span>
+              <div
+                class="counter-group d-flex align-items-center justify-content-center"
+              >
+                <button class="counter-button">-</button>
+                <input type="text" class="counter-input" value="1" />
+                <button class="counter-button">+</button>
+              </div>
+              <!-- ./counter-group -->
+              <button class="button card-button">Add to cart</button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img
+                src="./img/flowers/flower-5.png"
+                alt="gerbera"
+                class="card-image"
+              />
+              <h3 class="card-title">Gerbera</h3>
+              <span class="card-label">Select color: </span>
+              <div
+                class="colors d-flex align-items-center justify-content-between"
+              >
+                <label class="color-label white" for="white"></label>
+                <input
+                  class="color-input"
+                  type="radio"
+                  id="white"
+                  name="color"
+                  value="white"
+                />
+                <label class="color-label biege" for="biege"></label>
+                <input
+                  class="color-input"
+                  type="radio"
+                  id="biege"
+                  name="color"
+                  value="biege"
+                />
+                <label class="color-label pink" for="pink"></label>
+                <input
+                  class="color-input"
+                  type="radio"
+                  id="pink"
+                  name="color"
+                  value="pink"
+                />
+                <label class="color-label red" for="red"></label>
+                <input
+                  class="color-input"
+                  type="radio"
+                  id="red"
+                  name="color"
+                  value="red"
+                />
+                <label class="color-label blue" for="blue"></label>
+                <input
+                  class="color-input"
+                  type="radio"
+                  id="blue"
+                  name="color"
+                  value="blue"
+                />
+              </div>
+              <!-- /.colors -->
+              <span class="card-label">Quantity: </span>
+              <div
+                class="counter-group d-flex align-items-center justify-content-center"
+              >
+                <button class="counter-button">-</button>
+                <input type="text" class="counter-input" value="1" />
+                <button class="counter-button">+</button>
+              </div>
+              <!-- ./counter-group -->
+              <button class="button card-button">Add to cart</button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img
+                src="./img/flowers/flower-6.png"
+                alt="alstroemeria"
+                class="card-image"
+              />
+              <h3 class="card-title">Alstroemeria</h3>
+              <span class="card-label">Select color: </span>
+              <div
+                class="colors d-flex align-items-center justify-content-between"
+              >
+                <label class="color-label white" for="white"></label>
+                <input
+                  class="color-input"
+                  type="radio"
+                  id="white"
+                  name="color"
+                  value="white"
+                />
+                <label class="color-label biege" for="biege"></label>
+                <input
+                  class="color-input"
+                  type="radio"
+                  id="biege"
+                  name="color"
+                  value="biege"
+                />
+                <label class="color-label pink" for="pink"></label>
+                <input
+                  class="color-input"
+                  type="radio"
+                  id="pink"
+                  name="color"
+                  value="pink"
+                />
+                <label class="color-label red" for="red"></label>
+                <input
+                  class="color-input"
+                  type="radio"
+                  id="red"
+                  name="color"
+                  value="red"
+                />
+                <label class="color-label blue" for="blue"></label>
+                <input
+                  class="color-input"
+                  type="radio"
+                  id="blue"
+                  name="color"
+                  value="blue"
+                />
+              </div>
+              <!-- /.colors -->
+              <span class="card-label">Quantity: </span>
+              <div
+                class="counter-group d-flex align-items-center justify-content-center"
+              >
+                <button class="counter-button">-</button>
+                <input type="text" class="counter-input" value="1" />
+                <button class="counter-button">+</button>
+              </div>
+              <!-- ./counter-group -->
+              <button class="button card-button">Add to cart</button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img
+                src="./img/flowers/flower-7.png"
+                alt="chamomile"
+                class="card-image"
+              />
+              <h3 class="card-title">Сhamomile</h3>
+              <span class="card-label">Select color: </span>
+              <div
+                class="colors d-flex align-items-center justify-content-between"
+              >
+                <label class="color-label white" for="white"></label>
+                <input
+                  class="color-input"
+                  type="radio"
+                  id="white"
+                  name="color"
+                  value="white"
+                />
+                <label class="color-label biege" for="biege"></label>
+                <input
+                  class="color-input"
+                  type="radio"
+                  id="biege"
+                  name="color"
+                  value="biege"
+                />
+                <label class="color-label pink" for="pink"></label>
+                <input
+                  class="color-input"
+                  type="radio"
+                  id="pink"
+                  name="color"
+                  value="pink"
+                />
+                <label class="color-label red" for="red"></label>
+                <input
+                  class="color-input"
+                  type="radio"
+                  id="red"
+                  name="color"
+                  value="red"
+                />
+                <label class="color-label blue" for="blue"></label>
+                <input
+                  class="color-input"
+                  type="radio"
+                  id="blue"
+                  name="color"
+                  value="blue"
+                />
+              </div>
+              <!-- /.colors -->
+              <span class="card-label">Quantity: </span>
+              <div
+                class="counter-group d-flex align-items-center justify-content-center"
+              >
+                <button class="counter-button">-</button>
+                <input type="text" class="counter-input" value="1" />
+                <button class="counter-button">+</button>
+              </div>
+              <!-- ./counter-group -->
+              <button class="button card-button">Add to cart</button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img
+                src="./img/flowers/flower-8.png"
+                alt="tulip"
+                class="card-image"
+              />
+              <h3 class="card-title">Tulip</h3>
+              <span class="card-label">Select color: </span>
+              <div
+                class="colors d-flex align-items-center justify-content-between"
+              >
+                <label class="color-label white" for="white"></label>
+                <input
+                  class="color-input"
+                  type="radio"
+                  id="white"
+                  name="color"
+                  value="white"
+                />
+                <label class="color-label biege" for="biege"></label>
+                <input
+                  class="color-input"
+                  type="radio"
+                  id="biege"
+                  name="color"
+                  value="biege"
+                />
+                <label class="color-label pink" for="pink"></label>
+                <input
+                  class="color-input"
+                  type="radio"
+                  id="pink"
+                  name="color"
+                  value="pink"
+                />
+                <label class="color-label red" for="red"></label>
+                <input
+                  class="color-input"
+                  type="radio"
+                  id="red"
+                  name="color"
+                  value="red"
+                />
+                <label class="color-label blue" for="blue"></label>
+                <input
+                  class="color-input"
+                  type="radio"
+                  id="blue"
+                  name="color"
+                  value="blue"
+                />
+              </div>
+              <!-- /.colors -->
+              <span class="card-label">Quantity: </span>
+              <div
+                class="counter-group d-flex align-items-center justify-content-center"
+              >
+                <button class="counter-button">-</button>
+                <input type="text" class="counter-input" value="1" />
+                <button class="counter-button">+</button>
+              </div>
+              <!-- ./counter-group -->
+              <button class="button card-button">Add to cart</button>
+            </div>
+          </div>
+        </div>
+        <!-- ./row -->
+        <a href="#" class="more">All flowers</a>
+      </div>
+      <!-- ./container -->
+    </section>
+    <section class="offer">
+      <div class="container">
+        <h2 class="section-title offer-title">Still have questions?</h2>
+        <a
+          data-fancybox
+          data-src="#modal"
+          href="javascript:;"
+          class="offer-link"
+          >Our florists will call you!</a
+        >
+        <span class="offer-label">or call us</span>
+        <a href="tel:+78006548745" class="offer-phone">8 (800) 654-87-45</a>
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.offer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-md-6 mb-5 mb-md-0">
+            <nav>
+              <ul class="footer-menu">
+                <li class="footer-menu-item">
+                  <a href="#" class="footer-menu-link">Delivery</a>
+                </li>
+                <li class="footer-item">
+                  <a href="#" class="footer-menu-link">Payment</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="social">
+              Join us:
+              <a href="#" class="social-link">
+                <img src="./img/vk.png" alt="icon: vk" />
+              </a>
+            </div>
+          </div>
+          <!-- /.col-md-6 -->
+          <div class="col-md-6 footer-info">
+            <span class="footer-label">Client service</span>
+            <a href="tel:+123456789000" class="footer-phone"
+              >+12 34-567-89-000</a
+            >
+            <span class="footer-lab">Daily, around the clock</span>
+          </div>
+          <!-- /.col-md-6 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </footer>
+    <!-- /.footer -->
+    <section class="footer-second">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 mb-3 mb-md-0">
+            <a href="#">
+              <img
+                src="./img/footer-logo.svg"
+                alt="logo: Flowers"
+                class="footer-logo"
+            /></a>
+          </div>
+          <div class="col-md-6 mb-3 mb-md-0">
+            <span class="footer-description"
+            >Internet flower shop <br />
+              with <span class="text-color-red">worldwide </span>delivery</span
+            >
+          </div>
+          <div class="col-md-3">
+            <span class="footer-second-info">Site development: </span
+            ><a href="https://www.instagram.com/malayjulia/" class="author"
+              >Your front-end web developer</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="modal" id="modal">
+      <h2 class="modal-title">Request a call back</h2>
+      <form action="#">
+        <input type="tel" class="modal-input" placeholder="+7(___) __-__-__" />
+        <button class="button modal-button">Call me</button>
+      </form>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
