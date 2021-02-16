@@ -1,4 +1,4 @@
-# Sunny Florist. A learning project.
+# Flowers. A learning project.
 
 Languages: HTML, CSS, and JavaScript.
 
